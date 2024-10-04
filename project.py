@@ -99,11 +99,11 @@ class PriceMachine:
             result += f'<td>{line["цена за кг"]}</td>'
             result += f'</tr>'
             count_ += 1
-            result += '''
-            </table>
-            </body>
-            </html>
-            '''
+        result += '''
+        </table>
+        </body>
+        </html>
+        '''
         with open(fname, 'w', encoding='utf8') as f:
             f.write(result)
         return f"Данные экспортированны в {fname}"
